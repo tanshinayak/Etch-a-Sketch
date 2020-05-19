@@ -20,7 +20,7 @@ function erase()
 {
     let cells = [...document.querySelectorAll(".cell")];
   cells.forEach((cell) => {
-    cell.addEventListener("mouseover", () => {
+    cell.addEventListener("mouseenter", () => {
       cell.style.backgroundColor = 'white';
       cell.style.transition = "0.3s";
     });
@@ -37,7 +37,7 @@ function eraserall()
 function colourrandom(){
     let cells = [...document.querySelectorAll(".cell")];
   cells.forEach((cell) => {
-    cell.addEventListener("mouseover", () => {
+    cell.addEventListener("mouseenter", () => {
         let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
       cell.style.backgroundColor = randomColor;
       cell.style.transition = "0.3s";
@@ -48,7 +48,7 @@ function colourblack()
 {
     let cells = [...document.querySelectorAll(".cell")];
   cells.forEach((cell) => {
-    cell.addEventListener("mouseover", () => {
+    cell.addEventListener("mouseenter", () => {
       cell.style.backgroundColor = 'black';
       cell.style.transition = "0.3s";
     });
