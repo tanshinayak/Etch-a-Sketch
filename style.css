@@ -1,15 +1,62 @@
-#container{
-    flex-shrink:0;
-    order: 1;
-    margin: 5px;
-    background-color: #FFF;
-    border: 5px solid #222;
-	border-radius: 5px;
-	display: grid;
+html{
+    background-image: url("background.jfif");
+}
+#container {
+    display: grid;
+    height: 500px;
+    width:500px;
+    border: solid 1px black;
 }
 
-.cell{
-    padding: 0px;
-    margin: 0px;
-    background-color:#FFF;
+.cell {
+    border: solid 1px #000000;
+    background-color: whitesmoke;
+    height: auto;
+    width: auto;
+}
+.generate,.rainbow,.black,.eraser,.clear{
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    height:50px;
+    width: 100px;
+    border-width: 5px;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.generate:hover,.rainbow:hover,.black:hover,.eraser:hover,.clear:hover{
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height:50px;
+    width: 100px;
+    border-width: 5px;
+    border-color: blueviolet;
+    background-color: whitesmoke;
+    font-weight: bold;
+    color: blueviolet;
+}
+.body{
+    display: inline-block;
+}
+.buttons{
+    float: left;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.container{
+    float: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.heading{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: oblique;
+    color: burlywood;
 }
